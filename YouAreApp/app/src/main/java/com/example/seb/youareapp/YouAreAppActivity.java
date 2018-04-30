@@ -25,17 +25,35 @@ public class YouAreAppActivity extends AppCompatActivity {
         scanButton = findViewById(R.id.scanButtonId);
 
 
+
+        scanButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View button) {
+                stateTextView.setText("Hold Scan Button Longer!");
+
+            }
+        });
+
+
+
+
+
+
+        scanButton.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View button) {
+                StateProvider stateProvider = new StateProvider();
+                YouAreApp youAreApp = new YouAreApp(stateProvider);
+                String randomState = youAreApp.randomState();
+                stateTextView.setText(randomState);
+                return true;
+            }
+        });
+
     }
-
-    public void onScanButtonClicked(View button){
-
-        StateProvider stateProvider = new StateProvider();
-        YouAreApp youAreApp = new YouAreApp(stateProvider);
-        String randomState = youAreApp.randomState();
-        stateTextView.setText(randomState);
-
-
-    }
-
 }
+
+
+
+
 
