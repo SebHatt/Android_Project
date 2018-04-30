@@ -9,15 +9,16 @@
     <TextView
         android:id="@+id/stateTextViewId"
         android:layout_width="214dp"
-        android:layout_height="89dp"
+        android:layout_height="135dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="108dp"
         android:text="HELLO..."
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="24sp"
+        android:typeface="monospace"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -32,12 +33,17 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:background="@android:color/holo_blue_bright"
         android:hapticFeedbackEnabled="true"
         android:onClick="onScanButtonClicked"
         android:text="PRESS AND HOLD"
+        android:textColor="@color/colorPrimaryDark"
+        android:typeface="monospace"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/stateTextViewId" />
+        app:layout_constraintTop_toBottomOf="@+id/stateTextViewId"
+        app:layout_constraintVertical_bias="0.27" />
 
 </android.support.constraint.ConstraintLayout>
