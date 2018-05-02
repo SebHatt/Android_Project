@@ -21,7 +21,7 @@ public class StateProvider {
         states.add("You are uncertain about the future.");
         states.add("Today your life does not make sense to you.");
         states.add("Remember, bad times are just times that are bad.");
-        states.add("You got this.");
+        states.add("You got this Don't you?.");
         states.add("The weather will change soon.");
         states.add("Recently you've been unusually polite. Well done!");
         states.add("So it goes...");
@@ -36,9 +36,16 @@ public class StateProvider {
         states.add("Did you lock the door?");
         states.add("You seem worried. Maybe take up knitting?");
         states.add("You look happy. Keep going!");
-        states.add("Re-evaluate your position. ");
+        states.add("Take a nap.");
         states.add("It's not that bad.");
         states.add("You don't know what you don't know.");
+        states.add("Is that a banana in your pocket?");
+        states.add("You're gonna feel bad but tomorrow will be awesome!");
+        states.add("Time to be quiet.");
+        states.add("Look after your teeth and lungs.");
+        states.add("I love the smell of HashMaps in the morning.");
+        states.add("You really need to get that looked at by a professional.");
+
 
 
     }
